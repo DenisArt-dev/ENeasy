@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENeasy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <section id='screenZero' class="screenZero">
+        <div class="container">
+            <div class="firstScreen__header">
+                <h1 class="title">Хочешь выучить английский язык?</h1>
+                <p class="text">
+                    Устал от зубрежки и не хочешь тратить много времени на разбор сложной граматики?
+                    Тогда данный проэкт создан специально для тебя!
+                </p>
+            </div>
+            <div class="screenZero-buttons">
+                <button class="zeroButtons">Повторить выученные слова</button>
+                <button class="zeroButtons">
+                    Запомнить новые слова
+                    <span>(из моего словаря)</span>
+                </button>
+                <button class="zeroButtons">
+                    Запомнить новые слова
+                    <span>(Случайный подбор)</span>
+                </button>
+            </div>
+            <div class="logo">
+
+                <svg id='svgl' width="193" height="54" viewBox="0 0 193 54" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class='logoBg'
+                        d="M19.0381 44.3848C8.40452 40.1314 1.78699 34.5347 0.312993 28.5484C-1.161 22.5622 2.59976 16.5567 10.9545 11.5552C19.3092 6.55369 31.7409 2.86569 46.1315 1.11955C60.522 -0.626579 75.981 -0.322801 89.8744 1.97913C103.768 4.28106 115.236 8.43871 122.325 13.7437C129.414 19.0486 131.685 25.1727 128.751 31.0723C125.817 36.972 117.86 42.2822 106.236 46.0983C94.611 49.9143 80.0381 52 65 52V48.5106C78.0199 48.5106 90.6369 46.7048 100.701 43.4009C110.766 40.097 117.655 35.4995 120.195 30.3916C122.735 25.2837 120.769 19.9816 114.631 15.3886C108.494 10.7956 98.5648 7.19593 86.536 5.20293C74.5073 3.20994 61.123 2.94693 48.6638 4.45872C36.2046 5.97051 25.4413 9.16355 18.2078 13.4938C10.9744 17.824 7.71837 23.0236 8.99454 28.2064C10.2707 33.3893 16.0001 38.2348 25.2065 41.9174L19.0381 44.3848Z"
+                        fill="#D8DDE6">
+                        <!-- <animate attributeName='fill' begin='svgl.click' values='#fff; #D8DDE6' dur='1s' repeatCount='1' fill='freeze' calcMode='linear'></animate> -->
+                    </path>
+                    <path
+                        d="M58.2188 26.0781H41.1094V41.7344H60.6094V43H39.8438V8.875H60.6094V10.1406H41.1094V24.8125H58.2188V26.0781ZM91.7578 43H90.4922L68.4609 11.0312V43H67.1719V8.875H68.4609L90.4922 40.7734V8.875H91.7578V43ZM109.617 43.4688C107.57 43.4688 105.688 42.9219 103.969 41.8281C102.266 40.7188 100.93 39.2031 99.9609 37.2812C98.9922 35.3594 98.5078 33.2266 98.5078 30.8828V29.8281C98.5078 27.4844 98.9766 25.3359 99.9141 23.3828C100.852 21.4297 102.141 19.9062 103.781 18.8125C105.422 17.7188 107.211 17.1719 109.148 17.1719C111.977 17.1719 114.289 18.1797 116.086 20.1953C117.883 22.2109 118.781 24.8594 118.781 28.1406V29.4766H99.7734V30.8594C99.7734 32.9219 100.203 34.8359 101.062 36.6016C101.938 38.3516 103.133 39.7266 104.648 40.7266C106.18 41.7266 107.836 42.2266 109.617 42.2266C111.32 42.2266 112.766 41.9453 113.953 41.3828C115.156 40.8047 116.219 39.9219 117.141 38.7344L118.031 39.3672C116.141 42.1016 113.336 43.4688 109.617 43.4688ZM109.148 18.4375C106.68 18.4375 104.586 19.3594 102.867 21.2031C101.148 23.0312 100.141 25.3672 99.8438 28.2109H117.516V27.9062C117.516 26.1875 117.148 24.5938 116.414 23.125C115.695 21.6406 114.695 20.4922 113.414 19.6797C112.148 18.8516 110.727 18.4375 109.148 18.4375ZM141.07 43C140.758 41.9219 140.602 40.375 140.602 38.3594C139.602 39.9844 138.234 41.2422 136.5 42.1328C134.766 43.0234 132.805 43.4688 130.617 43.4688C128.273 43.4688 126.383 42.8359 124.945 41.5703C123.523 40.2891 122.812 38.625 122.812 36.5781C122.812 34.25 123.859 32.3906 125.953 31C128.062 29.5938 130.859 28.875 134.344 28.8438H140.602V25.1406C140.602 23.0156 139.93 21.3672 138.586 20.1953C137.258 19.0234 135.352 18.4375 132.867 18.4375C130.555 18.4375 128.625 19.0312 127.078 20.2188C125.531 21.4062 124.758 22.875 124.758 24.625L123.492 24.5781C123.492 22.5156 124.398 20.7656 126.211 19.3281C128.023 17.8906 130.242 17.1719 132.867 17.1719C135.602 17.1719 137.773 17.8594 139.383 19.2344C140.992 20.5938 141.82 22.5156 141.867 25V37.1172C141.867 39.8984 142.086 41.7891 142.523 42.7891V43H141.07ZM130.617 42.2266C132.992 42.2266 135.031 41.6953 136.734 40.6328C138.453 39.5703 139.742 38.0781 140.602 36.1562V30.1328H134.742C131.117 30.1328 128.344 30.8516 126.422 32.2891C124.859 33.4609 124.078 34.9219 124.078 36.6719C124.078 38.2188 124.695 39.5312 125.93 40.6094C127.164 41.6875 128.727 42.2266 130.617 42.2266ZM165.68 36.7891C165.68 33.7109 163.055 31.6172 157.805 30.5078C154.648 29.8359 152.453 28.9766 151.219 27.9297C149.984 26.8672 149.367 25.4141 149.367 23.5703C149.367 21.7109 150.148 20.1797 151.711 18.9766C153.289 17.7734 155.336 17.1719 157.852 17.1719C160.586 17.1719 162.781 17.8281 164.438 19.1406C166.094 20.4375 166.922 22.1953 166.922 24.4141H165.633C165.633 22.7109 164.914 21.2891 163.477 20.1484C162.039 19.0078 160.164 18.4375 157.852 18.4375C155.633 18.4375 153.875 18.9219 152.578 19.8906C151.281 20.8594 150.633 22.0703 150.633 23.5234C150.633 24.6641 150.875 25.5625 151.359 26.2188C151.844 26.8594 152.633 27.4453 153.727 27.9766C154.82 28.4922 156.414 28.9922 158.508 29.4766C160.602 29.9609 162.258 30.5312 163.477 31.1875C164.695 31.8438 165.578 32.625 166.125 33.5312C166.672 34.4219 166.945 35.5156 166.945 36.8125C166.945 38.8125 166.125 40.4219 164.484 41.6406C162.844 42.8594 160.695 43.4688 158.039 43.4688C155.195 43.4688 152.898 42.8281 151.148 41.5469C149.414 40.25 148.547 38.5859 148.547 36.5547H149.812C149.938 38.3359 150.719 39.7266 152.156 40.7266C153.609 41.7109 155.57 42.2031 158.039 42.2031C160.305 42.2031 162.141 41.6797 163.547 40.6328C164.969 39.5703 165.68 38.2891 165.68 36.7891ZM181.711 41.0312L181.875 40.5625L190.641 17.6406H192.047L180.703 47.4062L180.141 48.8125C178.922 51.7656 176.906 53.2422 174.094 53.2422C173.188 53.2422 172.562 53.1562 172.219 52.9844L172.195 51.7891C172.695 51.9297 173.266 52 173.906 52C175.234 52 176.336 51.6094 177.211 50.8281C178.086 50.0625 178.844 48.8047 179.484 47.0547L181.031 42.8594L170.93 17.6406H172.312L181.711 41.0312Z"
+                        fill="#737373" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenWriteCode" class="screenWriteCode">
+        <div class="container">
+            <div class="firstScreen-content__text screenWriteCode__text">
+                Вставь специальный код
+            </div>
+            <div class="screenWriteCode__icon">
+                <svg class="icon icon-south">
+                    <use xlink:href="#icon-south"></use>
+                    <symbol id="icon-south" viewBox="0 0 24 24">
+                        <path
+                            d="M18.984 15l-1.406-1.406-4.594 4.594v-16.172h-1.969v16.172l-4.594-4.594-1.406 1.406 6.984 6.984z">
+                        </path>
+                    </symbol>
+                    <style>
+                        .icon {
+                            display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                            stroke-width: 0;
+                            stroke: currentColor;
+                            fill: #212532;
+                        }
+                    </style>
+                </svg>
+            </div>
+            <div class="screenWriteCode-input">
+                <textarea id='textareaCode' class="screenWriteCode__input" name="text" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="firstScreen-content__button">
+                <button class="firstScreen-content__button-btn correctFirstBtnWCode" id='firstButtonWriteCode'>Поехали!</button>
+            </div>
+        </div>
+    </section>
+
+    <section id='screenChooseWords' class="screenChooseWords">
+        <div class="container">
+            <div class="firstScreen-content__text screenWriteCode__text">
+                Выберите 10 слов, которые хотите сегодня выучить
+            </div>
+            <div class="screenChooseWords-content">
+                <div id='screenChooseWordsTopNum' class="topNum screenChooseWords__topNum"></div>
+                <div class="screenChooseWords__icon">
+                    <svg id='chooseWordsShoutIc' version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 32 32">
+                        <title>Прослушать</title>
+                        <style>
+                            .voice {
+                                fill: #212532;
+                            }
+                        </style>
+                        <path class="voice"
+                            d="M22.485 25.985c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 4.094-4.094 4.094-10.755 0-14.849-0.586-0.586-0.586-1.536 0-2.121s1.536-0.586 2.121 0c2.55 2.55 3.954 5.94 3.954 9.546s-1.404 6.996-3.954 9.546c-0.293 0.293-0.677 0.439-1.061 0.439v0zM17.157 23.157c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 2.534-2.534 2.534-6.658 0-9.192-0.586-0.586-0.586-1.536 0-2.121s1.535-0.586 2.121 0c3.704 3.704 3.704 9.731 0 13.435-0.293 0.293-0.677 0.439-1.061 0.439z">
+                        </path>
+                        <path class="voice"
+                            d="M13 30c-0.26 0-0.516-0.102-0.707-0.293l-7.707-7.707h-3.586c-0.552 0-1-0.448-1-1v-10c0-0.552 0.448-1 1-1h3.586l7.707-7.707c0.286-0.286 0.716-0.372 1.090-0.217s0.617 0.519 0.617 0.924v26c0 0.404-0.244 0.769-0.617 0.924-0.124 0.051-0.254 0.076-0.383 0.076z">
+                        </path>
+                    </svg>
+                </div>
+                <div id='screenChooseWordsWordInner' class="secondScreen__word-word"></div>
+            </div>
+            <div id='chooseWordsMessage' class="screenChooseWords__message">Вы выбрали 10 слов! Теперь осталось их выучить!</div>
+            <div id='screenChooseWordsBtns' class="screenChooseWords-Buttons">
+                <button id='screenChooseWordsBtn1' class="buttonProceed screenChooseWords__Btn">Выбрать</button>
+                <button id='screenChooseWordsBtn2' class="buttonProceed screenChooseWords__Btn">Пропустить</button>
+            </div>
+            <div class="firstScreen-content__button">
+                <button class="firstScreen-content__button-btn correctFirstBtnWCode" id='chooseWordsFirstButton'>Поехали!</button>
+            </div>
+        </div>
+    </section>
+
+    <section id='firstScreen' class="firstScreen">
+        <div class="container">
+            <div class="firstScreen-content">
+                <div class="firstScreen-content__text">
+                    Напиши 10 слов, которые хочешь запомнить сегодня, и их перевод
+                    <span>(Если значений несколько, пиши через запятую)</span>
+                </div>
+                <div class="firstScreen-content-words">
+
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num some-1">01</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <p class="firstScreen-content-words__descr-text">En</p>
+                            <input id='wordEn1' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar some-1">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <p class="firstScreen-content-words__descr-text">Ru</p>
+                            <input id='wordRu1' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">02</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn2' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu2' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">03</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn3' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu3' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">04</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn4' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu4' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">05</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn5' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu5' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">06</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn6' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu6' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">07</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn7' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu7' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">08</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn8' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu8' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">09</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn9' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu9' type="text">
+                        </div>
+                    </div>
+                    <div class="firstScreen-content-words__inner">
+                        <div class="firstScreen-content-words__inner-num">10</div>
+                        <div class="firstScreen-content-words__inner-en">
+                            <input id='wordEn10' type="text">
+                        </div>
+                        <div class="firstScreen-content-words__inner-ar">
+                            <svg class="icon icon-transfer">
+                                <use xlink:href="#icon-transfer"></use>
+                                <symbol id="icon-transfer" viewBox="0 0 32 32">
+                                    <path
+                                        d="M31.998 24h-24.006v4l-7.992-6 7.992-6v4h24.006zM0 12h23.998v4l8-6-8-6v4h-23.998z">
+                                    </path>
+                                </symbol>
+                                <style>
+                                    .icon {
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        stroke-width: 0;
+                                        stroke: currentColor;
+                                        fill: #212532;
+                                    }
+
+                                    .icon-transfer {
+                                        width: 0.998046875em;
+                                    }
+                                </style>
+                            </svg>
+                        </div>
+                        <div class="firstScreen-content-words__inner-ru">
+                            <input id='wordRu10' type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="firstScreen-content__button">
+                    <button class="firstScreen-content__button-btn" id='firstButton'>Поехали!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='secondScreen' class='secondScreen'>
+        <div class="container">
+            <div id='topNum' class="topNum"></div>
+            <div class="secondScreen__word">
+                <div class="secondScreen__word-svg">
+                    <svg id='shoutIc' version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 32 32">
+                        <title>Прослушать</title>
+                        <style>
+                            .voice {
+                                fill: #212532;
+                            }
+                        </style>
+                        <path class="voice"
+                            d="M22.485 25.985c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 4.094-4.094 4.094-10.755 0-14.849-0.586-0.586-0.586-1.536 0-2.121s1.536-0.586 2.121 0c2.55 2.55 3.954 5.94 3.954 9.546s-1.404 6.996-3.954 9.546c-0.293 0.293-0.677 0.439-1.061 0.439v0zM17.157 23.157c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 2.534-2.534 2.534-6.658 0-9.192-0.586-0.586-0.586-1.536 0-2.121s1.535-0.586 2.121 0c3.704 3.704 3.704 9.731 0 13.435-0.293 0.293-0.677 0.439-1.061 0.439z">
+                        </path>
+                        <path class="voice"
+                            d="M13 30c-0.26 0-0.516-0.102-0.707-0.293l-7.707-7.707h-3.586c-0.552 0-1-0.448-1-1v-10c0-0.552 0.448-1 1-1h3.586l7.707-7.707c0.286-0.286 0.716-0.372 1.090-0.217s0.617 0.519 0.617 0.924v26c0 0.404-0.244 0.769-0.617 0.924-0.124 0.051-0.254 0.076-0.383 0.076z">
+                        </path>
+                    </svg>
+                </div>
+                <div id='secondScreenWordInner' class="secondScreen__word-word"></div>
+            </div>
+            <div class="secondScreen__descr">
+                Шаг 1 - постарайтесь запомнить слово
+            </div>
+            <div class="secondScreen__button">
+                <button id='buttonAr' class="buttonAr">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.91 10.41">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title>Продолжить</title>
+                        <g id="Слой_2" data-name="Слой 2">
+                            <g id="Слой_1-2" data-name="Слой 1">
+                                <line class="cls-1" y1="5.21" x2="50" y2="5.21" />
+                                <polyline class="cls-1" points="46 9.71 50.5 5.21 46 0.71" />
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenStep2" class="screenStep2">
+        <div class="container">
+            <div id='topNum2' class="topNum topNum2"></div>
+            <div class="secondScreen__word">
+                <div class="secondScreen__word-svg">
+                    <svg id='shoutIc2' version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 32 32">
+                        <title>Прослушать</title>
+                        <style>
+                            .voice {
+                                fill: #212532;
+                            }
+                        </style>
+                        <path class="voice"
+                            d="M22.485 25.985c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 4.094-4.094 4.094-10.755 0-14.849-0.586-0.586-0.586-1.536 0-2.121s1.536-0.586 2.121 0c2.55 2.55 3.954 5.94 3.954 9.546s-1.404 6.996-3.954 9.546c-0.293 0.293-0.677 0.439-1.061 0.439v0zM17.157 23.157c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 2.534-2.534 2.534-6.658 0-9.192-0.586-0.586-0.586-1.536 0-2.121s1.535-0.586 2.121 0c3.704 3.704 3.704 9.731 0 13.435-0.293 0.293-0.677 0.439-1.061 0.439z">
+                        </path>
+                        <path class="voice"
+                            d="M13 30c-0.26 0-0.516-0.102-0.707-0.293l-7.707-7.707h-3.586c-0.552 0-1-0.448-1-1v-10c0-0.552 0.448-1 1-1h3.586l7.707-7.707c0.286-0.286 0.716-0.372 1.090-0.217s0.617 0.519 0.617 0.924v26c0 0.404-0.244 0.769-0.617 0.924-0.124 0.051-0.254 0.076-0.383 0.076z">
+                        </path>
+                    </svg>
+                </div>
+                <div id='secondScreenWordInner2' class="secondScreen__word-word"></div>
+            </div>
+            <div id='secondScreenDescr2' class="secondScreen__descr secondScreen__descr2">
+                Шаг 2 - выберите подходящий перевод из списка
+            </div>
+            <div id='wordsButtons' class="screenStep2-wordsButton">
+                <button class="wordsButton wordsButtonBcgr"></button>
+                <button class="wordsButton wordsButtonBcgr"></button>
+                <button class="wordsButton wordsButtonBcgr"></button>
+                <button class="wordsButton wordsButtonBcgr"></button>
+                <button class="wordsButton wordsButtonBcgr"></button>
+                <button class="wordsButton wordsButtonBcgr"></button>
+            </div>
+            <div class="screen5inpMassenge"></div>
+            <div id='letters' class="letters">
+                <button onclick=checkWords(00) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(01) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(02) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(03) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(04) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(05) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(06) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(07) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(08) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(09) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(10) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(11) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(12) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(13) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(14) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(15) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(16) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(17) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(18) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(19) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(20) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(21) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(22) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(23) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(24) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(25) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(26) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(27) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(28) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(29) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(30) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(31) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(32) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(33) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(34) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(35) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(36) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(37) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(38) class="lettersButtonDef lettersButton"></button>
+                <button onclick=checkWords(39) class="lettersButtonDef lettersButton"></button>
+            </div>
+            <div class="screen5inpMassenge"></div>
+            <div class="screen5inpShel">
+                <input id='screen5inp' class="screen5inp screen5inpBg" type="text">
+            </div>
+            <div class="buttonProceed-inner">
+                <button id='buttonProceed' class="buttonProceed">Продолжить</button>
+                <button id='buttonAr2' class="buttonAr buttonAr2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.91 10.41">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title>Продолжить</title>
+                        <g id="Слой_2" data-name="Слой 2">
+                            <g id="Слой_1-2" data-name="Слой 1">
+                                <line class="cls-1" y1="5.21" x2="50" y2="5.21" />
+                                <polyline class="cls-1" points="46 9.71 50.5 5.21 46 0.71" />
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+    </section>
+
+    <section id='lastScreen' class="lastScreen">
+        <div class="container">
+            <div id='lastTitle' class="title lastTitle"></div>
+            <div class="descr">Статистика:</div>
+            <div class="lastScreen-statistics">
+                <div class="statisticsCircles">1</div>
+                <div class="statisticsCircles">2</div>
+                <div class="statisticsCircles">3</div>
+                <div class="statisticsCircles">4</div>
+                <div class="statisticsCircles">5</div>
+                <div class="statisticsCircles">6</div>
+                <div class="statisticsCircles">7</div>
+                <div class="statisticsCircles">8</div>
+                <div class="statisticsCircles">9</div>
+                <div class="statisticsCircles">10</div>
+            </div>
+            <div id='lastScreenMessage' class="screenChooseWords__message">Ошибок нет!</div>
+            <div class="lastScreen-buttonErr">
+                <button id='buttonErr' class="buttonErr">Работа над ошибками</button>
+            </div>
+            <div class="descr">Скопируйте специальный код, чтобы повторить выученные слова завтра!</div>
+            <div class="lastScreen-button">
+                <button id='buttonProceedLast' class="buttonProceed buttonProceedCode">Показать код</button>
+            </div>
+            <div id='lastScreenCode' class="lastScreen-code">
+                <div class="descr">
+                    Скопируйте себе в блокнот код, представленный ниже. Чтобы повторить выученные слова, достаточно
+                    вставить его в специальное поле (на главном экране).
+                </div>
+                <div id='code' class="lastScreen__code"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="lib.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
